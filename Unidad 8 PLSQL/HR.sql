@@ -3255,6 +3255,7 @@ ALTER TABLE order_items ENABLE CONSTRAINT fk_order_items_orders;
 ALTER TABLE inventories ENABLE CONSTRAINT fk_inventories_products;
 ALTER TABLE inventories ENABLE CONSTRAINT fk_inventories_warehouses;
 
+-- Enunciado
 --1. Guarda els noms dels 3 empleats amb més comandes (order) shipped a un Varray ordenant-los de més a menys.
 -- 2. Mostra el nom dels empleats (DBMS_OUTPUT).
 -- 3. Elimina (TRIM) el 2n i 3r empleats amb més comandes shipped i
