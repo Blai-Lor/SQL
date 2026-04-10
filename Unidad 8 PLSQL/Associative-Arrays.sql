@@ -14,11 +14,9 @@ BEGIN
 
     SELECT COUNT(o.order_id) INTO v_sales('Lily') FROM orders o
     JOIN employees e ON e.employee_id = o.salesman_id WHERE o.status = 'Shipped' AND e.first_name = 'Lily';
-
     v_sales('Blake') := 10;
     v_sales('Daisy') := 6;
     v_sales('Lily') := 8;
 
     DBMS_OUTPUT.PUT_LINE(v_sales(v_sales.FIRST));
-
 END;
