@@ -11,7 +11,6 @@ BEGIN
 
     SELECT COUNT(o.order_id) INTO v_sales('Daisy') FROM orders o
     JOIN employees e ON e.employee_id = o.salesman_id WHERE o.status = 'Shipped' AND e.first_name = 'Daisy';
-
     SELECT COUNT(o.order_id) INTO v_sales('Lily') FROM orders o
     JOIN employees e ON e.employee_id = o.salesman_id WHERE o.status = 'Shipped' AND e.first_name = 'Lily';
     v_sales('Blake') := 10;
